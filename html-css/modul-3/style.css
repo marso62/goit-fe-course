@@ -1,0 +1,41 @@
+nav {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+ul li {
+    display: inline-block;
+    padding: 50px;
+} 
+a{
+    color: rgb(98, 98, 98);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(75, 166, 223);
+}
+main{
+    font-family: 'Playfair Display', serif;
+
+}
+article {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 470px;
+    padding: 25px;
+}
+
+section {
+    width: 960px;
+    margin:0 auto;
+}
+
+.titl {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+}
+button a{
+    text-align: center;
+}
