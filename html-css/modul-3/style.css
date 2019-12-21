@@ -11,6 +11,7 @@ ul li {
 a{
     color: rgb(98, 98, 98);
     text-decoration: none;
+  
 }
 a:hover {
     color: rgb(75, 166, 223);
@@ -31,11 +32,16 @@ section {
     margin:0 auto;
 }
 
+
 .titl {
     font-family: 'Ubuntu', sans-serif;
     color: rgb(180, 173, 158);
     text-transform: uppercase;
 }
+.button {
+   text-align: center;
+   
+}
 button a{
-    text-align: center;
+    font-family: 'Playfair Display', serif;
 }
