@@ -43,9 +43,14 @@ a:hover {
   text-align: left;
   font-size: 0;
   margin: 0 auto;
-  width: 450px;
-  padding: 25px;
+  width: 420px;
+  padding: 0;
   margin-bottom: 142px;
+  vertical-align: top;
+  margin-right: 60px;
+}
+.block:nth-child(2n){
+  margin-right: 0;
 }
 .titl {
   font-family: "Ubuntu", sans-serif;
@@ -71,15 +76,12 @@ a:hover {
 }
 .head {
   color: rgb(98, 98, 98);
-  font-size: 29px;
+  font-size: 30px;
   padding: 0;
   margin: 0;
   margin-bottom: 42px;
 }
-.button {
-  margin: 0;
-  padding: 0;
-}
+
 #b {
   font-family: "Playfair Display", serif;
   margin: 0;
@@ -88,4 +90,5 @@ a:hover {
   height: 60px;
   font-size: 24px;
   line-height: 24px;
+  margin-bottom: 70px;
 }
