@@ -1,0 +1,240 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.content {
+  width: 1110px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.main-header {
+  padding-bottom: 315px;
+}
+
+.main-header {
+  /* padding: 38px, 0; */
+}
+.logo {
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-family: "Roboto", sans-serif;
+  color: rgb(81, 81, 81);
+  text-decoration: none;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  font-size: 30px;
+  line-height: 32px;
+}
+
+.logo::first-letter {
+  color: rgb(26, 188, 156);
+}
+.manu {
+  display: inline-block;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: right;
+  width: 1024px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.manu::shadow {
+  color: rgb(26, 188, 156);
+}
+
+.manu li {
+  display: inline-block;
+  margin-right: 36px;
+}
+
+.manu li:last-child {
+  margin-right: 0px;
+}
+
+.manu a:hover,
+.manu a:focus {
+  color: rgb(26, 188, 156);
+}
+
+.manu-link {
+  font-family: "OpenSans";
+  color: rgb(81, 81, 81);
+  text-decoration: none;
+  float: right;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.products {
+  margin-bottom: 100px;
+}
+
+.title-prod,
+.yiyle-news {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-size: 48px;
+  color: rgb(81, 81, 81);
+  text-align: center;
+  font-weight: 900;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.title-prod::after,
+.yiyle-news::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(26, 188, 156);
+  top: 67px;
+  right: calc(50% - 80px);
+  height: 8px;
+  width: 160px;
+}
+
+.prod-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.prod-list-item {
+  display: inline-block;
+  width: 255px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.prod-list-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.prod-list-item:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.prod-name {
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: rgb(50, 50, 50);
+
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  line-height: 32px;
+  width: 200px;
+  margin: 0;
+  padding: 14px;
+}
+
+.prod-many {
+  display: inline-block;
+  font-family: "Roboto";
+  background: #8c8c8c;
+  width: 55px;
+  padding: 14px 0;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.prod-list-item:hover .prod-name {
+    background-color: #1abc9c;
+}
+
+.prod-list-item:hover .prod-many {
+    background-color:  #81cabb;
+}
+
+
+/*  */
+.news {
+  margin-bottom: 46px;
+}
+
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.news-list-item {
+  display: inline-block;
+  width: 350px;
+  margin-right: 30px;
+}
+
+.news-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.new-img {
+  margin-bottom: 16px;
+}
+
+.title-news {
+  font-family: "OpenSans";
+  color: rgb(85, 82, 82);
+  font-weight: bold;
+  position: relative;
+  text-align: left;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.title-news::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(26, 188, 156);
+  height: 3px;
+  width: 136px;
+  left: 0;
+  top: 55px;
+}
+
+.content-news {
+  font-family: "OpenSans";
+  color: rgb(85, 82, 82);
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.but {
+  text-align: left;
+}
+
+.news-button {
+  font-family: "OpenSans";
+  background-color: rgb(78, 198, 171);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+  padding: 17px 43px;
+}
