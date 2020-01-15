@@ -217,18 +217,21 @@ img {
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
+  /* float: left; */
 }
 
 .title-news::after {
   content: "";
   display: block;
-  margin: 0 auto;
+  margin: 0;
   /* position: absolute; */
   background-color: rgb(26, 188, 156);
   height: 3px;
   width: 136px;
-  left: 0;
+  
   top: 55px;
+  
+  margin-top: 37px;
 }
 
 .content-news {
