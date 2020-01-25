@@ -45,7 +45,7 @@ html {
   color: rgb(26, 188, 156);
 }
 .menu {
-  /* display: inline-block; */
+  
   text-transform: uppercase;
   vertical-align: middle;
   text-align: right;
@@ -61,7 +61,7 @@ html {
 }
 
 .menu li {
-  /* display: inline-block; */
+ 
   float: left;
   margin-right: 36px;
 }
@@ -76,11 +76,11 @@ html {
 }
 
 .menu-link {
-  /* display: block; */
+  
   font-family: "Open Sans";
   color: rgb(81, 81, 81);
   text-decoration: none;
-  float: right;
+  /* float: right; */
   font-weight: bold;
   font-size: 14px;
 }
@@ -185,7 +185,7 @@ float: left;
 
 /*  */
 .news {
-  margin-bottom: 46px;
+  padding-bottom: 46px;
 }
 
 .news-list {
