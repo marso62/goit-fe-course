@@ -317,7 +317,7 @@ list-style: none;
 .foot-content {
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: flex-end;
     justify-content: space-between;
     height: 63px;
 }
@@ -353,15 +353,18 @@ margin-bottom: 25px;
 .form {
     height: 40px;
     width: 230px;
+    padding-left: 12px;
+    border: 1px solid rgb(229, 229, 229);
+    margin: 0;
+}
+
+input::placeholder {
     font-family: var(--Robo);
     color: #cccccc;
     font-size: 15px;
     line-height: 24px;
-    padding-left: 12px;
-    border: 1px solid rgb(229, 229, 229);
-    margin: 0;
-    
-}
+    font-style: italic;
+  }
 
 .subscribe {
     height: 42px;
