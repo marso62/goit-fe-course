@@ -19,7 +19,6 @@ img {
 
 .content {
   width: 1200px;
-  text-align: center;
   margin: 0 auto;
   padding: 0px;
 }
@@ -65,7 +64,6 @@ img {
 }
 
 .menu-name {
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -103,7 +101,6 @@ img {
 .content-main {
   margin: 0 auto;
   padding-top: 90px;
-  text-align: center;
   padding-bottom: 100px;
 }
 
@@ -115,6 +112,7 @@ img {
   color: rgb(51, 51, 51);
   font-size: 24px;
   padding-bottom: 60px;
+  text-align: center;
 }
 
 .italic {
@@ -139,7 +137,6 @@ img {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  list-style: none;
   margin: 0;
   padding: 0;
   font-size: 0px;
@@ -150,6 +147,8 @@ img {
   margin: 10px;
   margin-bottom: 80px;
   text-align: left;
+  position: relative;
+  padding-left: 60px;
 }
 
 .titi {
@@ -157,7 +156,6 @@ img {
   text-transform: uppercase;
   color: rgb(51, 51, 51);
   font-size: 14px;
-  padding-left: 80px;
 }
 
 .text {
@@ -166,19 +164,18 @@ img {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  padding-left: 80px;
 }
 
 .item-name::before {
   content: "";
   display: block;
-  height: 65px;
-  width: 70px;
+  height: 35px;
+  width: 35px;
   background-repeat: no-repeat;
-  margin-right: 30px;
   padding: 0;
   position: absolute;
-  background-position: center;
+ left: 0px;
+ top: 5px;
 }
 
 .icon-alarm::before {
@@ -214,7 +211,7 @@ list-style: none;
 }
 
 .titl-text-team {
-  width: 980px;
+  max-width: 980px;
   font-family: var(--Robo);
   color: rgb(153, 153, 153);
   font-size: 15px;
@@ -229,7 +226,6 @@ list-style: none;
 .warp {
     position: relative;
     background-color: rgb(149, 225, 211);
-    height: 470px;
     transition: color 200ms linear,  transform 200ms linear;
 }
 
@@ -243,8 +239,8 @@ list-style: none;
     position: absolute;
     display: flex;
     justify-content: center;
-    height: 470px;
-    width: 382px;
+    height: 100%;
+    width: 100%;
     top: 0;
     background: linear-gradient(to top, rgb(252,227,138, 0.8) 0%, rgb(243,129,129,0.8) 100%);  
     opacity: 0;
@@ -263,6 +259,15 @@ list-style: none;
 .warp img{
     transition: color 200ms linear, transform 200ms linear;
 }
+
+.butt-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 .so {
     height: 55px;
     width: 55px;
@@ -270,7 +275,6 @@ list-style: none;
     margin: 2px;
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: 200px;
 }
 
 .so:hover {
@@ -315,8 +319,7 @@ list-style: none;
 /* FOOTER */
 
 .foot-content {
-    /* height: 63px; */
-    margin: 0;
+    /* margin: 0 auto; */
     
 }
 
@@ -327,7 +330,6 @@ position: absolute;
 width: 1200px;
 height: 1px;
 background-color: rgb(229, 229, 229);
-margin-bottom: 12px;
 }
 
 .foot-flex {
@@ -335,6 +337,7 @@ margin-bottom: 12px;
     justify-content: space-between;
     align-items: center;
     height: 63px;
+
 }
 
 .foot-data {
