@@ -22,7 +22,7 @@
   }
   
   .content {
-    width: 1200px;
+    width: 940px;
     margin: 0 auto;
     padding: 0px;
     
@@ -170,7 +170,7 @@ padding: 0;
   position: relative;
   padding-top: 90px;
   padding-bottom: 105px;
-  width: 300px;
+  width: 290px;
   margin: 0;
   
 }
@@ -219,7 +219,8 @@ padding: 0;
 
 /* BANER */
 .main-baner {
-  background-image: url("../img/MapImage.png"), url("../img/Background.png");
+  background-color: black;
+  background-image: url("../img/MapImage.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 675px;
@@ -233,54 +234,82 @@ padding: 0;
 
 .form {
   display: flex;
-  /* flex-wrap: wrap; */
+   flex-wrap: wrap; 
   justify-content: space-between;
-  width: 1200px;
+  width: 940px;
   margin: 0 auto;
   padding: 0;
 }
 
 .overlay {
   display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  width: calc (50% - 20px);
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(50% - 20px);
+  height: 212px;
+  margin: 0;
 }
 
 .input {
-  text-transform: uppercase;
   font-size: 14px;
-  color: rgb(187, 187, 187);
+  color: var(--colB);
   margin: 0;
-  border: none;
- height: 53px;
+  border-radius: 5px;
+  border: 2px solid white;
+ height: 50px;
   width: 455px;
+
 }
 
 .sidebar {
-  /* display: block; */
   margin: 0;
   padding: 0;
 }
 
 .input-text {
   resize: none;
-  text-transform: uppercase;
+  color: var(--colB);
   font-size: 14px;
-  color: rgb(187, 187, 187);
-  height: 212px;
-  width: 455px;
+  height: 190px;
+  width: 431px;
+  border-radius: 5px;
+  border: 2px solid white;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .button {
-  /* display: block; */
   font-family: "Montserrat";
   background-color: var(--colG);
   font-weight: bold;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   font-size: 18px;
-  height: 66px;
+  height: 62px;
   width: 240px;
-  border: none;
+  border-radius: 5px;
+  border: 2px solid var(--colG);
+  margin-top: 30px;
+}
+
+.input:focus:valid,
+.input-text:focus:valid {
+  outline: 2px solid rgb(252, 11, 232);
+}
+
+.input:focus:invalid,
+.input-text:focus:invalid {
+outline: 2px solid rgb(67, 252, 11);
+}
+
+input::placeholder {
+  text-transform: uppercase;
+  color: rgb(187, 187, 187);
+  font-size: 14px;
+}
+
+textarea::placeholder {
+  text-transform: uppercase;
+  color: rgb(187, 187, 187);
+  font-size: 14px;
 }

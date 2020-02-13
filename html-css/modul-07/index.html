@@ -52,17 +52,19 @@
             <h2 class="title-main title-main-baner">Contact Us</h2>
             <p class="subtitle-main">Proin iaculis purus consequat sem cure.</p>
         
-            <figure class="form" action="#" method="get">
+            <form class="form" action="#" method="get">
+              
                 <div class="overlay">
-                    <input type ="text" placeholder="Your Name *" class="input" required>
-                    <input type="email" placeholder="Your E-mail *" class="input" required>
-                    <input type="text" placeholder="Subject" class="input">
+                    <input type ="text" name="name" placeholder="Your Name *" class="input" autofocus required>
+                    <input type="email" name="email" placeholder="Your E-mail *" class="input" required>
+                    <input type="text" name="text" placeholder="Subject" class="input">
                 </div>
                 <div class="sidebar">
                     <textarea name = "comments" placeholder="Your Message *" class="input-text" required></textarea>
                 </div>
-                <input type="button" value = "Send Message" class="button">
-            </figure>
+           
+                <input type="submit" value = "Send Message" class="button">
+            </form>
         </section>
     </main>
 </body>
