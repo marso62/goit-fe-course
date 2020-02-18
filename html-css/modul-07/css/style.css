@@ -12,9 +12,7 @@
  
   }
 
-  
-  
-  
+    
   img {
     display: block;
     max-width: 100%;
@@ -22,15 +20,15 @@
   }
   
   .content {
-    width: 940px;
+    max-width: 940px;
     margin: 0 auto;
     padding: 0px;
     
   }
   
   :root {
-    --colG: rgb(254, 209, 54);
-    --colB: rgb(34, 34, 34);
+    --colG:rgb(254, 209, 54);
+    --colB:rgb(34, 34, 34);
   }
 
   /* FONT-FACE */
@@ -222,7 +220,7 @@ padding: 0;
   background-color: black;
   background-image: url("../img/MapImage.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: right;
   min-height: 675px;
 }
 .title-main-baner{
@@ -236,7 +234,6 @@ padding: 0;
   display: flex;
    flex-wrap: wrap; 
   justify-content: space-between;
-  width: 940px;
   margin: 0 auto;
   padding: 0;
 }
@@ -246,7 +243,6 @@ padding: 0;
   flex-direction: column;
   justify-content: space-between;
   width: calc(50% - 20px);
-  height: 212px;
   margin: 0;
 }
 
@@ -257,11 +253,14 @@ padding: 0;
   border-radius: 5px;
   border: 2px solid white;
  height: 50px;
-  width: 455px;
+  width: 100%;
+  padding-left: 10px;
+  box-sizing: border-box;
 
 }
 
 .sidebar {
+  width: calc(50% - 20px);
   margin: 0;
   padding: 0;
 }
@@ -271,11 +270,10 @@ padding: 0;
   color: var(--colB);
   font-size: 14px;
   height: 190px;
-  width: 431px;
+  width: 100%;
   border-radius: 5px;
   border: 2px solid white;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding: 20px;
 }
 
 .button {
@@ -294,12 +292,14 @@ padding: 0;
 
 .input:focus:valid,
 .input-text:focus:valid {
-  outline: 2px solid rgb(252, 11, 232);
+  border-radius: 5px;
+  border: 2px solid rgb(59, 252, 11);
 }
 
 .input:focus:invalid,
 .input-text:focus:invalid {
-outline: 2px solid rgb(67, 252, 11);
+  border-radius: 5px;
+  border: 2px solid rgb(252, 19, 11);
 }
 
 input::placeholder {
