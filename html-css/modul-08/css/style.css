@@ -47,6 +47,7 @@ html {
 }
 
 .content {
+  /* position: relative; */
     max-width: 320px;
     margin: 0 auto;
     padding: 0;
@@ -54,6 +55,7 @@ html {
 }
 
 .baner {
+  /* position: absolute; */
     width: 100%;
     min-height: 540px;
     background-image: url(../img/VectorSmartObject.png);
@@ -133,6 +135,13 @@ html {
   color: var(--colW);
 }
 
+.link {
+  color: var(--colW);
+  font-size: 14px;
+  font-family: "Montserrat";
+  text-decoration: none;
+}
+
 .title-main {
   font-size: 22px;
   font-family: "Montserrat";
@@ -141,9 +150,14 @@ html {
   margin-bottom: 20px;
 }
 
+
+
 .divide {
-  /* text-align: center; */
+  width: 219px;
+  margin-bottom: 30px;
 }
+
+
 
 .picture::before {
 content: "";
@@ -153,24 +167,47 @@ border-radius: 100%;
 border: 6px solid var(--colW);
 width: 45px;
 height: 45px;
-left: 52%;
+right: 20%;
+bottom: -7px;
+background-position: center center;
+background-repeat: no-repeat;
+}
 
+.picture.icon-shape_1 {
+  position: relative;
 }
 
 .icon-shape_1::before {
-  background: rgb(255, 78, 80) url(../img/Shape128.png) no-repeat center center;
+  background-color: rgb(255, 78, 80);
+  background-image: url(../img/Shape128.png);
+}
+
+.picture.icon-shape_2 {
+  position: relative;
 }
 
 .icon-shape_2::before {
-  background: rgb(255, 165, 7) url(../img/Shape155.png) no-repeat center center;
+  background-color: rgb(255, 165, 7);
+  background-image: url(../img/Shape155.png);
 }
 
+.picture.icon-shape_3 {
+  position: relative;
+}
+
+
 .icon-shape_3::before {
-  background: rgb(28, 215, 173) url(../img/Shape153.png) no-repeat center center;
+  background-color: rgb(28, 215, 173);
+  background-image: url(../img/Shape153.png);
+}
+
+.picture.icon-shape_4 {
+  position: relative;
 }
 
 .icon-shape_4::before {
-  background: rgb(78, 115, 219) url(../img/Shape170.png) no-repeat center center;
+  background-color: rgb(78, 115, 219);
+  background-image: url(../img/Shape170.png);
 }
 
 .pict {
@@ -191,7 +228,8 @@ left: 52%;
   font-size: 14px;
   font-family: "Roboto";
   color: rgb(102, 102, 102);
-  margin-bottom: 30px;
+
+
 }
 
 .button-and {
@@ -200,5 +238,7 @@ left: 52%;
   height: 40px;
   width: 280px;
   margin-bottom: 55px;
-  
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(255, 78, 80);
 }
