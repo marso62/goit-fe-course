@@ -4,65 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../modul-09/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../modul-09/css/style.css">
+    <title>Modul 9</title>
 </head>
 
 <body>
-    <section class="header">
-        <div class="content">
-            <nav class="header__navigation-header navigation-header">
-                <div class="menu-header">
-                    <a href="" class="menu-header__link">Log in</a>
-                    <a href="" class="menu-header__link">Sign up</a>
-                </div>
-                <div class="logo">
-                    <a class="logo__link" href="#">URLAUBSGLÜCK</a>
+    <section class="baner">
+        <div class="container">
+            <nav class="row navigation-header">
+                <ul class="menu-header col-12 col-md-4 col-lg-3">
+                    <li class="header-nav-item"><a href="#" class="menu-link">Log in</a></li>
+                    <li class="header-nav-item"><a href="#" class="menu-link">Sign up</a></li>
+                </ul>
+
+                <div class="logo col-12 col-md-4 col-lg-3">
+                    <a class="logo-link" href="#">URLAUBSGLÜCK</a>
                 </div>
             </nav>
-            <div class="header__text">
-                <p class="header__title">Share your holiday dreams</p>
-                <p class="header__subtitle">And find the perfect partner to fullfill it</p>
+            <div class="header-text row">
+                <h2 class="header-title col-12">Share your holiday dreams</h2>
+                <p class="header-subtitle col-12">And find the perfect partner to fullfill it</p>
+                <div class="col-12 col-md-4">
+                    <a href="#" class="header-button">Find your holiday partner</a>
+                </div>
             </div>
-            <a href="#" class="header__button">Find your holiday partner</a>
+
         </div>
     </section>
 
-    <section class="content">
-        <div class="main">
-            <h2 class="main__title">Meet a partner for your best holiday</h2>
-        <div class="main__page page">
-            <article class="page__column column">
-                <div class="column__image column__icon-shape_1">
-                    <img src="../modul-08/img/Layer6.png" alt="picture1" class="column_pic">
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="main-title">Meet a partner for your best holiday</h2>
+            </div>
+        </div>
+        <div class="row column">
+            <article class="col-12 col-md-6 col-lg-3">
+                <div class="column-image icon-shape_1">
+                    <img src="../modul-09/img/Layer6.png" alt="picture1" class="column-pic">
                 </div>
-                <h3 class="column__title">Bradley Hunter</h3>
-                <p class="column__subtitle">Based in Chicago. I love playing tennis and loud music.</p>
+                <h3 class="column-title">Bradley Hunter</h3>
+                <p class="column-subtitle">Based in Chicago. I love playing tennis and loud music.</p>
             </article>
-            <article class="page__column column">
-                <div class="column__image column__icon-shape_2">
-                    <img src="../modul-08/img/Layer8.png" alt="picture1" class="column_pic">
+            <article class="col-12 col-md-6 col-lg-3">
+                <div class="column-image icon-shape_2">
+                    <img src="../modul-09/img/Layer8.png" alt="picture2" class="column-pic">
                 </div>
-                <h3 class="column__title">Lucas Marsha</h3>
-                <p class="column__subtitle">I get my inspiration from nature and objects around me. I have a passion to
+                <h3 class="column-title">Lucas Marsha</h3>
+                <p class="column-subtitle">I get my inspiration from nature and objects around me. I have a passion to
                     colours, typography and skateboards.</p>
             </article>
-            <article class="page__column column">
-                <div class="column__image column__icon-shape_3">
-                    <img src="../modul-08/img/Layer7.png" alt="picture1" class="column_pic">
+            <article class="col-12 col-md-6 col-lg-3">
+                <div class="column-image icon-shape_3">
+                    <img src="../modul-09/img/Layer7.png" alt="picture3" class="column-pic">
                 </div>
-                <h3 class="column__title">Heather Walker</h3>
-                <p class="column__subtitle">I'm a happy person that loves cats and climbing on mountains.</p>
+                <h3 class="column-title">Heather Walker</h3>
+                <p class="column-subtitle">I'm a happy person that loves cats and climbing on mountains.</p>
             </article>
-            <article class="page__column column">
-                <div class="column__image column__icon-shape_4">
-                    <img src="../modul-08/img/Layer10.png" alt="picture1" class="column_pic">
+            <article class="col-12 col-md-6 col-lg-3">
+                <div class="column-image icon-shape_4">
+                    <img src="../modul-09/img/Layer10.png" alt="picture4" class="column-pic">
                 </div>
-                <h3 class="column__title">Bradley Hunter</h3>
-                <p class="column__subtitle">Based in Chicago. I love playing tennis and loud music.</p>
+                <h3 class="column-title">Bradley Hunter</h3>
+                <p class="column-subtitle">Based in Chicago. I love playing tennis and loud music.</p>
             </article>
         </div>
-        <button class="main__button-and">See other partners</button>
-    </div>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <button class="button-and">See other partners</button>
+            </div>
+        </div>
     </section>
 </body>
 

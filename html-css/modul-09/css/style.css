@@ -1,0 +1,263 @@
+button:focus {
+  outline: none !important;
+}
+
+/* montserrat-800 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Montserrat ExtraBold"), local("Montserrat-ExtraBold"),
+    url("../font/montserrat-v14-latin-800.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../font/montserrat-v14-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../font/roboto-v20-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../font/roboto-v20-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.baner {
+  width: 100%;
+  min-height: 540px;
+  background-color: black;
+  background-image: url(../img/VectorSmartObject.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 70px;
+}
+
+.menu-header {
+  margin-bottom: 130px;
+  padding-top: 20px;
+}
+
+.header-nav-item {
+  display: inline-block;
+  height: 37px;
+  width: 92px;
+  font-size: 0;
+  border-radius: 22px;
+  border: 4px solid rgba(255, 255, 255, 0);
+  padding-top: 5px;
+}
+
+.header-nav-item:hover,
+.header-nav-item:focus {
+  border: 4px solid rgb(255, 255, 255);
+}
+
+.menu-link {
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.logo-link {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+.header-text {
+  color: rgb(255, 255, 255);
+}
+
+.header-title {
+  font-family: "Montserrat";
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.header-subtitle {
+  font-family: "Roboto";
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.header-button {
+  background-color: rgb(255, 78, 80);
+  border: 2px solid rgb(255, 78, 80);
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-family: "Montserrat";
+  text-decoration: none;
+  padding-left: 52px;
+  padding-right: 52px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* MAIN */
+.main-title {
+  font-size: 22px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  margin-bottom: 20px;
+}
+
+.column [class*="col-"] {
+  margin-bottom: 30px;
+}
+
+.column-image::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  border: 6px solid rgb(255, 255, 255);
+  width: 45px;
+  height: 45px;
+  right: 29%;
+  bottom: 13px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.column-image.icon-shape_1 {
+  position: relative;
+}
+
+.icon-shape_1::before {
+  background-color: rgb(255, 78, 80);
+  background-image: url(../img/Shape128.png);
+}
+
+.column-image.icon-shape_2 {
+  position: relative;
+}
+
+.icon-shape_2::before {
+  background-color: rgb(255, 165, 7);
+  background-image: url(../img/Shape155.png);
+}
+
+.column-image.icon-shape_3 {
+  position: relative;
+}
+
+.icon-shape_3::before {
+  background-color: rgb(28, 215, 173);
+  background-image: url(../img/Shape153.png);
+}
+
+.column-image.icon-shape_4 {
+  position: relative;
+}
+
+.icon-shape_4::before {
+  background-color: rgb(78, 115, 219);
+  background-image: url(../img/Shape170.png);
+}
+
+.column-pic {
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+
+.column-title {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  margin-bottom: 15px;
+}
+
+.column-subtitle {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(102, 102, 102);
+}
+
+.button-and {
+  border-radius: 20px;
+  border: 3px solid rgb(255, 78, 80);
+  height: 40px;
+  width: 280px;
+  margin-bottom: 55px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(255, 78, 80);
+  background-color: white;
+}
+
+@media (min-width: 748px) {
+  .baner {
+    min-height: 700px;
+    background-image: url(../img/VectorSmartObject2.png);
+  }
+
+  .navigation-header {
+    margin-top: 40px;
+  }
+
+  .logo {
+    margin-top: 50px;
+  }
+
+  .header-title {
+    font-size: 52px;
+    margin-bottom: 25px;
+  }
+
+  .header-subtitle {
+    font-size: 24px;
+    margin-bottom: 55px;
+    white-space: normal;
+  }
+
+  .header-button {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .main-title {
+    margin-bottom: 35px;
+  }
+
+  .column [class*="col-"] {
+    margin-top: 30px;
+  }
+
+  .column:nth-of-type(2) {
+    order: 3;
+  }
+
+  .column:nth-of-type(3) {
+    order: 2;
+  }
+
+  .column:nth-of-type(4) {
+    order: 4;
+  }
+
+  .button-and {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .baner {
+    background-image: url(../img/VectorSmartObject3.png);
+  }
+}
