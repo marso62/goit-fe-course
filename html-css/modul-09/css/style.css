@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 button:focus {
   outline: none !important;
 }
@@ -24,19 +28,22 @@ button:focus {
       url("../font/roboto-v20-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+.container {
+  text-align: center;
+}
+
 .baner {
-  width: 100%;
   min-height: 540px;
   background-color: black;
   background-image: url(../img/VectorSmartObject.png);
-  background-repeat: no-repeat;
+  background-repeat: space;
   background-size: cover;
-  margin-bottom: 70px;
-}
+  }
 
 .menu-header {
-  margin-bottom: 130px;
-  padding-top: 20px;
+  padding-top: 19px;
+  padding-bottom: 115px;
+  margin: 0;
 }
 
 .header-nav-item {
@@ -62,16 +69,12 @@ button:focus {
   text-decoration: none;
 }
 
-.logo {
-  margin-bottom: 30px;
-}
-
 .logo-link {
   text-decoration: none;
   font-size: 20px;
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .header-text {
@@ -80,15 +83,26 @@ button:focus {
 
 .header-title {
   font-family: "Montserrat";
-  font-size: 30px;
+  font-size: 28px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.span-header-text {
+  display: block;
 }
 
 .header-subtitle {
   font-family: "Roboto";
   font-size: 18px;
-  margin-bottom: 40px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.span-header-subtitle {
+  display: block;
 }
 
 .header-button {
@@ -100,10 +114,10 @@ button:focus {
   font-size: 14px;
   font-family: "Montserrat";
   text-decoration: none;
-  padding-left: 52px;
-  padding-right: 52px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 /* MAIN */
@@ -111,7 +125,9 @@ button:focus {
   font-size: 22px;
   font-family: "Montserrat";
   color: rgb(51, 51, 51);
-  margin-bottom: 20px;
+  padding-top: 70px;
+  /* padding-bottom: 20px; */
+  margin: 0;
 }
 
 .column [class*="col-"] {
@@ -186,6 +202,12 @@ button:focus {
   color: rgb(102, 102, 102);
 }
 
+.null {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
 .button-and {
   border-radius: 20px;
   border: 3px solid rgb(255, 78, 80);
@@ -205,54 +227,57 @@ button:focus {
   }
 
   .navigation-header {
-    margin-top: 40px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* align-content: center; */
   }
 
   .logo {
-    margin-top: 50px;
+    padding-top: 20px;
   }
 
   .header-title {
     font-size: 52px;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
   }
 
   .header-subtitle {
     font-size: 24px;
-    margin-bottom: 55px;
+    padding-bottom: 55px;
     white-space: normal;
   }
 
-  .header-button {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  .span-header-subtitle {
+    display: inline-block;
   }
 
-  .main-title {
-    margin-bottom: 35px;
+  .header-button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .column [class*="col-"] {
     margin-top: 30px;
   }
 
-  .column:nth-of-type(2) {
+  .column-item:nth-of-type(2) {
     order: 3;
   }
 
-  .column:nth-of-type(3) {
+  .column-item:nth-of-type(3) {
     order: 2;
   }
 
-  .column:nth-of-type(4) {
+  .column-item:nth-of-type(4) {
     order: 4;
   }
 
   .button-and {
     margin-top: 10px;
     margin-bottom: 40px;
+    width: 190px;
   }
 }
 
@@ -260,4 +285,5 @@ button:focus {
   .baner {
     background-image: url(../img/VectorSmartObject3.png);
   }
+
 }
