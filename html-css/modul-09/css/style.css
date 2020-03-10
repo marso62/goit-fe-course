@@ -135,6 +135,15 @@ button:focus {
   margin-bottom: 30px;
 }
 
+.column-image {
+  position: relative;
+  width: 123px;
+  height: 123px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+
 .column-image::before {
   content: "";
   display: block;
@@ -143,8 +152,8 @@ button:focus {
   border: 6px solid rgb(255, 255, 255);
   width: 45px;
   height: 45px;
-  right: 22%;
-  bottom: 46%;
+  right: 3%;
+  bottom: -8%;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -171,7 +180,6 @@ button:focus {
 }
 
 .column-pic {
-  position: relative;
   border-radius: 100%;
   margin-bottom: 20px;
 }
@@ -188,7 +196,7 @@ button:focus {
   font-family: "Roboto";
   color: rgb(102, 102, 102);
   width: 200px;
-  text-align: center; /* почему не работает? как выстовить по середине при растягивании?*/
+  margin: auto;
 }
 
 .null {
