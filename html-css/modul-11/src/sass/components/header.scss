@@ -1,0 +1,134 @@
+.banner {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(243, 129, 129, 0.9)),
+      to(rgba(252, 227, 138, 0.9))
+    ),
+    url(../images/banner/bird.jpg);
+  background: -o-linear-gradient(
+      top,
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 138, 0.9)
+    ),
+    url(../images/banner/bird.jpg);
+  background: linear-gradient(
+      to bottom,
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 138, 0.9)
+    ),
+    url(../images/banner/bird.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 48px;
+}
+
+.header__conteiner {
+  min-height: 1000px;
+}
+
+.nav-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+
+  &__logo {
+    @include font($font-nav, 30px, 1.7, 900, $col-white);
+  }
+
+  &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-width: 620px;
+  }
+
+  &__link {
+    @include font($font-nav, 14px, 1.2, 400, $col-white);
+    text-transform: uppercase;
+  }
+
+  &__link:hover {
+    color: $col-hover;
+  }
+
+  &__list--after a::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    margin-top: 12px;
+  }
+
+  &__list--after a:hover::after {
+    background-color: $col-hover;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: $col-white;
+  }
+
+  &__icon:hover {
+    fill: $col-hover;
+  }
+}
+
+.nav-page--indent {
+  padding: 40px;
+  margin-bottom: 140px;
+}
+
+.content-header {
+  width: 815px;
+  margin: 0 auto;
+  text-align: center;
+
+  &__title {
+    @include font($font-title, 72px, 1.2, 900, $col-white);
+  }
+
+  &__title--indent {
+    margin-bottom: 60px;
+  }
+
+  &__subtitle {
+    @include font($font-nav, 150px, 140px, 900, $col-white);
+    text-transform: uppercase;
+    margin-bottom: 125px;
+  }
+
+  &__button {
+    background-color: transparent;
+    width: 155px;
+    height: 35px;
+    border: 4px solid $col-white;
+    color: $col-white;
+  }
+}
+
+.title {
+  text-align: center;
+  font-family: $font-title;
+  font-weight: bold;
+}
+
+.button {
+  text-transform: uppercase;
+  font-family: $col-white;
+  font-weight: bold;
+  font-size: 14px;
+}

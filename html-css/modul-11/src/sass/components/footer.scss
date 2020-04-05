@@ -1,0 +1,95 @@
+.footer-container {
+
+    &--before::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 1200px;
+        height: 1px;
+        background-color: $col-border;
+        }
+
+        &__flex {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            height: 63px;
+        
+        }
+
+}
+    
+    .footer-text {
+        @include font ($font-nav, 14px, 1.2, 400, $col-footer);
+        margin: 25px;
+
+        &__link {
+            display: inline-block;
+            color: $col-after;
+        }
+
+        &__link:hover {
+            color: $col-hover;
+        }
+
+        &__link:hover {
+            color: $col-hover;
+        }
+    }
+    
+    
+    .footer-container__form {
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-pack: end;
+           -ms-flex-pack: end;
+               justify-content: flex-end;
+    }
+    
+    .forms__search {
+        height: 40px;
+        width: 230px;
+        padding-left: 12px;
+        border: 1px solid $col-border;
+        margin: 0;
+    }
+    
+    input::-webkit-input-placeholder {
+        @include font ($font-text, 15px, 24px, 400, $col-imput);
+        font-style: italic;
+      }
+    
+    input::-moz-placeholder {
+        @include font ($font-text, 15px, 24px, 400, $col-imput);
+        font-style: italic;
+      }
+    
+    input:-ms-input-placeholder {
+        @include font ($font-text, 15px, 24px, 400, $col-imput);
+        font-style: italic;
+      }
+    
+    input::-ms-input-placeholder {
+        @include font ($font-text, 15px, 24px, 400, $col-imput);
+        font-style: italic;
+      }
+    
+    input::placeholder {
+        @include font ($font-text, 15px, 24px, 400, $col-imput);
+        font-style: italic;
+      }
+    
+    .forms__button {
+        height: 42px;
+        width: 150px;
+        background: $col-icon;
+        color: $col-white;
+        border: 0;
+    }
